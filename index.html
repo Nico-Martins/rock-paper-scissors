@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="scripts.js" async></script>
+        <script src="scripts.js" defer></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="titles">
+            <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+            <a href="https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock" target="_blank" id="tutorial">How to play</a>
+        </div>
+
+        <div id="ui">
+            <div class="button-container">
+                <h2>You</h2>
+
+                <div class="score">
+                    <p id="your-score" class="number">0</p>
+                    <img src="you.png" alt="A vector of a thinking human head" width="20%">
+                </div>
+
+                <div class="buttons">
+                    <div id="r" class="button human-button">Rock</div>
+                    <div id="p" class="button human-button">Paper</div>
+                    <div id="s" class="button human-button">Scissors</div>
+                    <div id="l" class="button human-button">Lizard</div>
+                    <div id="sp" class="button human-button">Spock</div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <h2>Computer</h2>
+
+                <div class="score">
+                    <img src="computer.png" alt="A vector of a thinking cyborg head" width="20%">
+                    <p id="computer-score" class="number">0</p>
+                </div>
+
+                <div class="buttons">
+                    <div class="button computer-button">Rock</div>
+                    <div class="button computer-button">Paper</div>
+                    <div class="button computer-button">Scissors</div>
+                    <div class="button computer-button">Lizard</div>
+                    <div class="button computer-button">Spock</div>
+                </div>
+            </div>
+        </div>
+        
+        <p id="result">Select an option to start playing!</p>
 
     </body>
 </html>

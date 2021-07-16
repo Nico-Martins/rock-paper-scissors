@@ -1,0 +1,98 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(126, 126, 126, 0.3);
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 20% 60% 20%; 
+}
+
+
+#titles {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 22.5%;
+}
+h1 {
+    font-size: 35px;
+}
+#tutorial {
+    text-decoration: none;
+    color: white;
+}
+
+
+#ui {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    column-gap: 10%;
+    justify-items: center;
+    align-items: center;
+} 
+.button-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3.5%;
+    justify-items: center;
+    align-items: center;
+}
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;  
+}
+.number {
+    font-size: 30px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button {
+    width: 20%;
+    padding: 8px;
+    margin: 5px;
+    border: 2.5px solid rgba(0, 0, 0, 0.76);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: all .07s ease;
+}
+.human-button:hover {
+    transform: scale(1.1);
+}
+.human-button:active {
+    border-color: white;
+    box-shadow: 0 0 1rem white;
+}
+.computer-button:hover {
+    cursor: not-allowed;
+}
+
+
+/*
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+*/
